@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Element In An Array</title>
+
+    <script>
+
+
+        // Inserting A New Element (newEl) At Position (position)
+        function addData() {
+
+            let data = [60, 30, 10, 67, 40];
+
+            // Getting Element From User Input
+            let newEl = document.getElementById('newEl').value;
+            newEl = parseInt(newEl) // Converting String To Number
+
+            // Getting Position From User Input
+            let position = document.getElementById('position').value;
+
+            // If User Submits Invalid Position, Throw Error As Alert
+            if (position > data.length - 1 || position < 0) {
+                alert("Invalid Position")
+                return;
+            }
+
+            // Running A For Loop To Insert The Data
+            for (let i = data.length - 1; i >= 0; i--) {
+
+                // If i > position, Keep The Loop Running, Else Loop Will Stop Running
+                if (i >= position) {
+                    data[i + 1] = data[i]
+
+                    // If i == position, Update The Position
+                    if (i == position) {
+                        data[i] = newEl
+                    }
+                }
+
+            }
+            // This Will Print The Updated Data
+            console.log(data)
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div><input type="text" id="newEl" placeholder="element"></div>
+    <div style="margin:20px 0;"><input type="text" id="position" placeholder="position"></div>
+    <div><button onclick="addData()">Submit</button></div>
+
+</body>
+
+</html>
