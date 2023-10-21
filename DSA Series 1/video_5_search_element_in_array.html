@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Element In An Array</title>
+
+    <script>
+
+        function searchElement() {
+            let data = [20, 40, 60, 5, 10, 70, 80, 99];
+
+            // Getting Position To Find The Element In Array From The User
+            let el = document.getElementById('element').value;
+            el = parseInt(el) // Convert String To Number
+
+            // Using For Loop To Search The Element
+            for (let i = 0; i < data.length; i++) {
+                // When Element Found, Break The Loop
+                if (el === data[i]) {
+                    console.log(el + " is at postion " + i + ".");
+                    break;
+                    // If No Element Found, Throw Error
+                }else if(i === data.length - 1) {
+                    console.error("No Element Found.")
+                }
+            }
+
+            // JS In-built Method To Find An Element Position In An Array
+            console.log(data.indexOf(60))
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <input type="text" name="" id="element" placeholder="element">
+    <button onclick="searchElement()">search element</button>
+</body>
+
+</html>

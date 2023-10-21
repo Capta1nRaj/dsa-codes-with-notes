@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Element In An Array</title>
+
+    <script>
+        function removeElement() {
+            let data = [20, 30, 45, 76, 20, 80];
+
+            // Getting Position To Remove From The User
+            let position = document.getElementById('position').value;
+            position = parseInt(position) // Convert String To Number
+
+            // Using For Loop To Remove The Element
+            for (let i = position; i < data.length - 1; i++) {
+                data[i] = data[i + 1]
+            }
+
+            // Removing The Last Element As It Comes Undefined Once Any Element Is Removed From Between Of The Array
+            data.length = data.length - 1;
+            console.log(data)
+
+            // To Delete An Element From The Array Using JS In-built Method .splice();
+            data.splice(2, 1) // Here 2 Means Position, & 1 Means Elements To Remove From That Position
+            console.log(data)
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="text" name="" id="position" placeholder="position">
+    <button onclick="removeElement()">remove element</button>
+
+</body>
+
+</html>

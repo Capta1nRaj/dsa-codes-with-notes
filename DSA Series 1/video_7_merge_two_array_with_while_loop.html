@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge 2 Array</title>
+
+    <script>
+        let data1 = [3, 7, 12, 34, 56, 90];
+        let data2 = [4, 9, 25, 45];
+        let data3 = [];
+
+        // While Loop Method Will Only Work In Sorted Array
+        // Defining 3 Variables With 0 Value
+        let d1 = 0;
+        let d2 = 0;
+        let d3 = 0;
+        // Using && To Validate A While Loop Till Both Array Length Gets Equal
+        while (d1 < data1.length && d2 < data2.length) {
+            if(data1[d1] < data2[d2]){
+                data3[d3] = data1[d1];
+                d1++;
+            }else{
+                data3[d3] = data2[d2];
+                d2++;
+            }
+            d3++;
+        }
+
+        // Once The Length Gets Equal, Then, Add The Remaining Elements To The Array Length
+        // We Can Use while Loop Method
+        while (d1 < data1.length) {
+            data3[d3] = data1[d1];
+            d1++;
+            d3++;
+        }
+        
+        // Or We Can Use for Loop Method
+        for(let i = d1; i<data1.length; i++) {
+            data3[data3.length] = data1[i];
+        }
+
+        console.log(data3)
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

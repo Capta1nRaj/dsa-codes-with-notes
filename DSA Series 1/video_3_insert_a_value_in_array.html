@@ -20,6 +20,7 @@
 
             // Getting Position From User Input
             let position = document.getElementById('position').value;
+            position = parseInt(position) // Converting String To Number
 
             // If User Submits Invalid Position, Throw Error As Alert
             if (position > data.length - 1 || position < 0) {
@@ -34,8 +35,8 @@
                 if (i >= position) {
                     data[i + 1] = data[i]
 
-                    // If i == position, Update The Position
-                    if (i == position) {
+                    // If i === position, Update The Position
+                    if (i === position) {
                         data[i] = newEl
                     }
                 }
@@ -43,7 +44,13 @@
             }
             // This Will Print The Updated Data
             console.log(data)
+
         }
+
+        // We Can Also User .splice() To Insert An Element In The Array
+        let data = [60, 30, 10, 67, 40];
+        data.splice(2, 0, 2000) // 2 Means At Which Position To Insert An Element, 0 Means To Delete How Many Element, & 2000 Means The Elements Need To Insert, If Multiple, Seperate By Comma
+        console.log(data)
 
     </script>
 

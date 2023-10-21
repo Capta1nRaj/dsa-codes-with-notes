@@ -1,6 +1,6 @@
 # 1. What is Data Structure?
 
-It is a way to organize data, so that, we can use that data in an efficient manner.
+- It is a way to organize data, so that, we can use that data in an efficient manner.
 
 # 2. Types of Data Structure:-
 
@@ -54,4 +54,33 @@ There are 2 types of DS:-
 ## 4. Studied:-
 
 - Array traversion in video_2_array_traversion.html.
-- Insert a value in an array in video_3_insert_a_value_in_array.html.
+- Insert a value in an array in video_3_insert_a_value_in_array.html, & also learned **.splice(indexWhereToAdd, HowManyToElemntsAdd, ElementsToAddSeperatedByComma)** method.
+- Delete a value in an array in video_4_delete_a_value_in_array.html, & also learned in-built js method to remove an element from the array **.splice(indexFromWhereToDelete, totalElementsToDelete)**
+- Search an element in an array in video_5_search_element_in_array.html, & also learned **.indexOf(element)**, shortcut method to find any element position in an array.
+- Merge 2 Array in video_6_merge_two_array.html, & also learned **...** spread method to merge two arrays.
+- Merge 2 Array in video_7_merge_two_array_with_while_loop.html.
+
+# 5. Algorithm Complexity:-
+
+- What is Alog Comp:- Steps to do anyting.
+- There are two type of complexity:-
+- (i.) Space Complexity, it means memory taken by the function/code to execute.
+- (ii.) Time Complexity, it means time taken by the function/code to execute, or amount of space required to solve a problem. Lesser the number of lines of the code took to execute has better the time complexity. Space Comp = Auxilary Space + Input Size.
+- Whenever we made a program, we must check time & space complexity.
+- Lets discuss more about this per file video_6(file6) & video_7(file7).
+- in file6, it took 21 lines of the code to execute, whereas file7 took 38 lines. So file6 is better in comparision to file7 because it will execute faster in comparision for time complexity.
+- Now let's talk about Space Complexity, in file6, the space complexity is 4, whereas in file7, it is 6. So file6 is still faster than file7 in terms of space complexity.
+- But here is a catch if someone says you must sort the array too, so file6 will take long time in comparision to file7.
+- Big O notation:- Use to denote the complexity of the program.
+- For double loop:- f(n) = n² = Time Complexity.
+- Example:- f(n) = 5n² + 6n + 12, 5 means the loop inside the loop will have 5 lines, 6 means the main loop will have 6 lines, & 12 means static lines of the code. But mostly we will calculate 5n² as 6n + 12 value doesn't matter that much.
+
+# 6. Asymptotic Analysis & Notation:-
+
+- What is Asymptotic Analysis:- It provides a high-level understanding of how an algorithm performs with respect to input size.
+
+# 7. Array Sorting:-
+
+## Bubble Sorting:-
+
+If you want to sort an array using bubble sorting, you will need a loop to run n² times. Eg.:- let x =[4,8,10,6], so this loop will run 4 x 4 = 16 times. Code in video_10_bubble_sorting.html.
