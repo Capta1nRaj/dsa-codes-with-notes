@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion</title>
+
+    <script>
+        // Method 1
+        let value = 1;
+        function factorialMethod1(x) {
+            if (x > 1) {
+                value *= x;
+                factorialMethod1(x-1);
+            }
+        }
+        
+        let x = 5;
+        factorialMethod1(x);
+        console.log(value);
+
+        // Method 2
+        function factorialMethod2(y) {
+            if(y == 0){
+                return 1;
+            }
+            return y*factorialMethod2(y-1);
+        }
+
+        let y = 5;
+        console.log(factorialMethod2(y));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

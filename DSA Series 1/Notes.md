@@ -84,3 +84,17 @@ There are 2 types of DS:-
 ## Bubble Sorting:-
 
 If you want to sort an array using bubble sorting, you will need a loop to run n² times. Eg.:- let x =[4,8,10,6], so this loop will run 4 x 4 = 16 times. Code in video_10_bubble_sorting.html.
+
+# 8. Recursion:-
+
+- It is a process in which a method calls itself to solve some problem.
+- There are 2 types of recursion:-
+  1. Direct recursion:- If the function is called inside same function it is called direct recursion. Explained in video_11_recursion.html.
+  2. Indirect recursion:- If the function is called to a different function it is called direct recursion. Explained in video_12_indirect_recursion.html
+
+## Head & Tail Recursion:-
+
+* How debugger works:- Watch this [video](https://www.youtube.com/watch?v=vzTqM04YbiY&list=PL8p2I9GklV47TMMnPzqnkCtSOS3ebr4O7&index=16).
+* What is call stack:- Watch this [video](https://youtu.be/vzTqM04YbiY?list=PL8p2I9GklV47TMMnPzqnkCtSOS3ebr4O7&t=586).
+* Head & Tail Recursion more explained in this[ video](https://youtu.be/vzTqM04YbiY?list=PL8p2I9GklV47TMMnPzqnkCtSOS3ebr4O7&t=1068).
+* Reverse an array using recursion in video_14_reverse_array_with_recursion.html, & JS default have an in-built reverse function i.e.:- data.reverse();
