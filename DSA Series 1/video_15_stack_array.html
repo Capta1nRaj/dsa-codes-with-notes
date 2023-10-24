@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Array</title>
+
+    <script>
+        let data = [];
+        let currentSize = data.length;
+        let max = 5;
+
+        function push(value) {
+            if (currentSize < max) {
+                data[currentSize] = value;
+                currentSize++;
+            }else{
+                alert("Stack Is Full, You Cannot Push:- " + value);
+            }
+        }
+
+        function pop(){
+            if(currentSize > 0) {
+                currentSize--;
+                data.length = currentSize;
+            }else{
+                alert("Stack Is Empty");
+            }
+
+        }
+
+        push(20)
+        push(30)
+        push(10)
+        push(40)
+        pop()
+        pop()
+        push(50)
+        pop()
+        push(500)
+        push(100)
+        push(200)
+        pop()
+        pop()
+        
+        console.log(data);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

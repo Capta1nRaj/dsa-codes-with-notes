@@ -79,7 +79,7 @@ There are 2 types of DS:-
 
 - What is Asymptotic Analysis:- It provides a high-level understanding of how an algorithm performs with respect to input size.
 
-# 7. Array Sorting:-
+# 7. Array Data Structure/Sorting:-
 
 ## Bubble Sorting:-
 
@@ -98,3 +98,15 @@ If you want to sort an array using bubble sorting, you will need a loop to run n
 * What is call stack:- Watch this [video](https://youtu.be/vzTqM04YbiY?list=PL8p2I9GklV47TMMnPzqnkCtSOS3ebr4O7&t=586).
 * Head & Tail Recursion more explained in this[ video](https://youtu.be/vzTqM04YbiY?list=PL8p2I9GklV47TMMnPzqnkCtSOS3ebr4O7&t=1068).
 * Reverse an array using recursion in video_14_reverse_array_with_recursion.html, & JS default have an in-built reverse function i.e.:- data.reverse();
+
+# 9. Stack Data Structure:-
+
+- What is stack:- It is a linear DS.
+- Eg.:- Stack, Queue, Array.
+- Eg. of non-linear DS:- Tree, Graph.
+- In Stack DS, operations are performed as LIFO or FILO only.
+- In Stack DS, you can not find any data in between of an array.
+- When we defined stack, we always find the max value.
+- There are mainly 2 operation in Stack DS i.e. Push & Pop.
+- Some other operations are:- isEmpty(), peak().
+- What is callByReference:- What [video](https://youtu.be/iXxHiad2uI4?list=PL8p2I9GklV47TMMnPzqnkCtSOS3ebr4O7&t=962).

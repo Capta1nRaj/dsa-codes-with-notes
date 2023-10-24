@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse Strign With Stack</title>
+
+    <script>
+        let data = [];
+        let currentSize = data.length;
+
+        function push(newVal) {
+            data[currentSize] = newVal;
+            currentSize++;
+        }
+
+        function pop() {
+            let lastRemovedItem = data[currentSize-1];
+            currentSize--;
+            data.length = currentSize;
+            return lastRemovedItem;
+        }
+
+        // Here We Are Storing The Reversed String In item As callByReference Only In Array Or Object
+        function reverseString(item){
+            for(let i = 0; i < item.length; i++){
+                push(item[i]);
+            }
+            for(let i = 0; i < item.length; i++){
+                item[i] = pop();
+            }
+            console.log(item.join(""));
+        }
+
+        // Or You Can Use Below One Too By Declaring Another Variable
+        /* function reverseString(item){
+            let reversedString = "";
+            for(let i = 0; i < item.length; i++){
+                push(item[i]);
+            }
+            for(let i = 0; i < item.length; i++){
+                reversedString += pop();
+            }
+            console.log(reversedString);
+        } */
+
+        let str = "priyal";
+        str = str.split(""); 
+        reverseString(str)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack Array Using Input & Buttons</title>
+
+    <script>
+        let data = [];
+        let currentSize = data.length;
+        let max = 5;
+
+        
+        function push() {
+            const value = document.getElementById('newValue').value;
+            parseInt(value);
+
+            if (currentSize < max) {
+                data[currentSize] = value;
+                currentSize++;
+            } else {
+                alert("Stack Is Full, You Cannot Push:- " + value);
+            }
+        }
+
+        function pop() {
+            if (currentSize > 0) {
+                currentSize--;
+                data.length = currentSize;
+            } else {
+                alert("Stack Is Empty");
+            }
+        }
+
+        function display(){
+            document.getElementById('displayValue').innerHTML = "";
+            for(let i = 0; i < data.length; i++) {
+                document.getElementById('displayValue').innerHTML += data[i] + ",";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <input type="number" placeholder="value" id="newValue" />
+    <button onclick="push()">push</button>
+    <button onclick="pop()">pop</button>
+    <button onclick="display()">display</button>
+    <div id="displayValue"></div>
+</body>
+
+</html>
