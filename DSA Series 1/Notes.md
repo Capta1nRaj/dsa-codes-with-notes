@@ -101,7 +101,7 @@ If you want to sort an array using bubble sorting, you will need a loop to run n
 
 # 9. Stack Data Structure:-
 
-- What is stack:- It is a linear DS.
+- What is stack:- It is a linear DS & also called LIFO.
 - Eg.:- Stack, Queue, Array.
 - Eg. of non-linear DS:- Tree, Graph.
 - In Stack DS, operations are performed as LIFO or FILO only.
@@ -110,3 +110,9 @@ If you want to sort an array using bubble sorting, you will need a loop to run n
 - There are mainly 2 operation in Stack DS i.e. Push & Pop.
 - Some other operations are:- isEmpty(), peak().
 - What is callByReference:- What [video](https://youtu.be/iXxHiad2uI4?list=PL8p2I9GklV47TMMnPzqnkCtSOS3ebr4O7&t=962).
+
+# 10. Queue Data Structure:-
+
+- It is also a linear DS, but it is called FIFO.
+- Euqueue:- Add item in queue in front.
+- Dequeue:- Remove item in queue in end.
