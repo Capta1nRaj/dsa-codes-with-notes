@@ -116,3 +116,16 @@ If you want to sort an array using bubble sorting, you will need a loop to run n
 - It is also a linear DS, but it is called FIFO.
 - Euqueue:- Add item in queue in front.
 - Dequeue:- Remove item in queue in end.
+
+## Circular Queue DS:-
+
+- A circular queue is the extended version of a regular queue where the last element is connected to the first element.
+
+# 11. Search Algorithms:-
+
+- There are 2 types of search algorithms:-
+  - Linear.
+  - Binary.
+- Interview Questions:-
+  - How many types of Search Algo are there?
+  - Linear search complexity:- O(n).
